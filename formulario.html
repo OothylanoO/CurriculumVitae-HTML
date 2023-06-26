@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Botón "Registrar"</title>
+</head>
+<body>
+
+  <!-- engrese diferentes requisitos para que la persona se pueda registrar -->
+
+    <section class="form-register">
+    <h4>FORMULARIO DE REGISTRO</h4>
+    <input class="controls" type="text" name="nombres"  placeholder="Ingrese su Nombre"><br>
+    <br>
+
+    <input class="controls" type="text" name="apellidos"  placeholder="Ingrese su Apellido"><br>
+    <br>
+
+    <input class="controls" type="email" name="correo"  placeholder="Ingrese su Correo"><br>
+    <br>
+
+    <input class="controls" type="text" name="edad"  placeholder="Ingrese su edad"><br>
+    <br>
+
+      <!-- en este apartado use el combobox para el
+      año de nacimiento y la carrera que tiene  -->
+    <label for="anio">Año de Nacimiento:</label>
+    <select name="anio">
+    <option value="">Seleccionar</option>
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    </select><br>
+    <br>
+
+    <label for="carrera">Seleccione su carrera:</label>
+    <select name="carrera">
+    <option value="1">Computacion</option>
+    <option value="2">Estadistica</option>
+    <option value="3">Enfermeria</option>
+    </select><br>
+    <br>
+    <input class="controls" type="password" name="correo" placeholder="Ingrese su Contraseña">
+    </section>
+    <br>
+
+      <!-- aqui tenemos un boton que nos llevara al mensaje de registrado correctamente  -->
+    <button onclick="redirigir()">Registrar usuario</button>
+    <script>
+    function redirigir() {
+      window.location.href = "mensaje.html";
+    }
+    </script>
+</body>
+</html>

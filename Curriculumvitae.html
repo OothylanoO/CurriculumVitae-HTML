@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi CurriculumVitae</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <!-- Agregue algunos estilos para darle la forma del curriculum
+         y darle un poco de orden al HTML y no este desordenado -->
+    <title>Cuadro con trazos</title>
+    <style>
+
+        /* este es el estilo del header */
+
+        .header {
+        width: 794px;
+        height: 190px;
+        border: 4px solid #000000;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        display: flex;
+        }
+
+        .imagen {
+            max-width: 180px;
+            max-height: 180px;
+            padding-left: 8em;
+            
+        }
+        .nombre {
+            text-align: left;
+            margin-top: 2em;
+            font-size: 2em;
+        }
+
+    /* Este es el estilo de divicion de las hojas */
+
+        .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        width: 820px;
+
+        }
+        .half {
+        border: 4px solid black;
+        padding: 20px;
+        height: 820px;
+        
+        }
+        /* Este es el estilo del footer */
+
+        .footer{
+            margin-left: 8em;
+            font-size: 2em;
+        }
+        .copy{
+            font-size: 25px;
+            margin-left: 5em;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Como cabecera agregre el header, colocando el nombre y la imagen que esta enlazada 
+    a la carpeta "imagenes" -->
+
+    <header
+    class="header">
+        <img class="imagen" src="imagenes/perfil.jpg" alt="Imagen" >
+        <div class="nombre">Daniel Chino Justo</div>
+    </header>
+
+<!-- Agrege dos divisiones a la hoja para colocar informacion en ambas partes 
+como en el modelo mostrado y igualmente agregre algunos estilos para dar un poco de orden-->
+
+<title>División de la Hoja</title>
+
+</head>
+<body>
+<div class="container">
+    <div class="half">
+        <!-- primera parte del curriculum (Izquierda) -->
+        <h1>Biografia</h1>
+                <p>Mi nombre es daniel Chino Justo, tengo NN años, naci en el año de NN un dia 1 de enero
+                    en la ciudad de masuko donde vivi los primeros años de vida para luego mudarme a la ciudad
+                    de ayaviri donde termine mis estudios de Primaria, secundaria y actualmente voy finalizando
+                    mis estudios superiores en el IESTPA con la carrera de COMPUTACION E INFORMATICA.
+
+                </p>
+                <br>
+                <h1>Educacion</h1>
+                <p>diseñador gráfico que pese a su corta edad ya ha trabajado para muchas agencias</p>
+                <br>
+                <li>Computacion e Informatica</li>
+                <li>Operador de SOLO45</li>
+                <li>Atencion al cliente</li>
+                <br>
+                <h3>SKILLS</h3>
+                        
+                        <P>Diseño grafico <progress value="80" max="100"></progress> 80%</P>
+                        <P>Desarrollador  <progress value="85" max="100"></progress> 87%</P>
+                        <P>Editor         <progress value="65" max="100"></progress> 65%</P>
+
+                        <h3>Contactos</h3>
+                        <p>
+                         <img src="imagenes\telefono.png"  width="24" height="24">telefono: 925 194 596<br>
+                         <br>
+                         <img src="imagenes\correo.png"  width="24" height="24">Correo: Daniel@gmail.com<br>
+                         <br>
+                         <img src="imagenes\ubicacion.png"  width="24" height="24">Jr. Selva Alegre
+                     </p>
+        
+    </div>
+    <div class="half">
+        <!-- segunda parte del curriculum (Derecha)-->
+        <h3>Experiencia</h3>
+                  <p>Cuento con expeciencia en algunos de estos programas</p>
+                  <ul>
+                    <li>sql server</li>
+                    <li>after effects</li>
+                    <li>illustrator</li> 
+                    <li>Python</li>
+                    <li>cisco packet tracer</li>
+                    <li>laravel</li>
+                    <li>HTML</li>  
+                    <li>CSS</li>
+                  </ul>
+                  <br>
+
+                <h3>Diseñador graficos y especialista</h3>
+                <p>Conseguir diseños que generen emociones y conecten con el público.
+                  Poseer habilidades en diferentes técnicas de dibujo. Conocerlo todo sobre colores,
+                  formas y materiales. Cuidar cada detalle de un proyecto y ser muy perfeccionista.</p>
+                  <br>
+                <ul>
+                      <li>Adobe Photoshop CC</li>
+                      <li>Adobe Illustrator.</li>
+                      <li>Corel Draw</li>
+                  </ul>
+                  <br>
+                  <img src="imagenes\academica.png"  width="24" height="24"> Formacion Academica<br>
+                  <br>
+              
+                  <ul>
+                      <li>IEP: 71011 SAN LUIS GONZAGA AYAVIRI</li>
+                      <br>
+                      <li>IES: MARIANO MELGAR AYAVIRI</li>
+                      <br>
+                      <li>IESTP-AYAVIRI</li>
+                      
+                  </ul>
+    </div>
+</div>
+
+<!-- En el footer agregue el copy y el botton para regresar al formulario -->
+
+<footer>
+    <div class="copy" p>Todos los derechos reservados &copy; 2023 DanielChinoJusto</p>
+    </div>
+    <button class="footer" onclick="cargarFormulario()">Cargar formulario</button>
+
+    <script>
+        function cargarFormulario() {
+          window.location.href = "formulario.html";
+        }
+      </script>
+  </footer>
+
+</body>
+</html>
